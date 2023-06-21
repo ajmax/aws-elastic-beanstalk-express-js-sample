@@ -3,6 +3,7 @@ kind: System
 metadata:
   name: beanstalk-express
   description: sample aws beanstalk node app
+  labels:
     example.com/custom: custom_label_value
   annotations:
     example.com/service-discovery: sample_beanstalk
@@ -21,3 +22,5 @@ spec:
   owner: innovation-team-5
   providesApi: sample-api
   system: serverless
+  providesApis:
+    - beanstalk-node-api
