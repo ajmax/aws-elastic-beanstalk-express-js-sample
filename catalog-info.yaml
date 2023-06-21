@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: beanstalk-express
+  description: sample aws beanstalk node app
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: sample_beanstalk
+    # circleci.com/project-slug: github/example-org/artist-website
+  tags:
+    - node
+    - beanstalk
+  links:
+    - url: https://admin.example-org.com
+      title: Sample Serverless App
+      icon: beanstalk
+      type: serverless-app
+spec:
+  type: serverless-app
+  lifecycle: development
+  owner: innovation-team-5
+  providesApi: sample-api
+  system: serverless
